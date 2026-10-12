@@ -89,7 +89,8 @@ Item {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
             Layout.alignment: Qt.AlignHCenter
-            font.pointSize: 35
+            font.pointSize: 64
+            font.weight: Font.DemiBold
             color: "white"
 
             function updateInfo() {
@@ -102,7 +103,8 @@ Item {
             anchors.top: timeLabel.bottom
             anchors.topMargin: FishUI.Units.largeSpacing
             anchors.horizontalCenter: parent.horizontalCenter
-            font.pointSize: 19
+            font.pointSize: 15
+            font.weight: Font.Medium
             color: "white"
 
             function updateInfo() {
@@ -149,9 +151,21 @@ Item {
 
         Rectangle {
             anchors.fill: parent
-            radius: FishUI.Theme.bigRadius + 2
-            color: FishUI.Theme.darkMode ? "#424242" : "white"
-            opacity: 0.5
+            radius: 26
+            color: Qt.rgba(0.08, 0.09, 0.13, 0.72)
+            border.width: 1 / FishUI.Dpi.ratio
+            border.color: Qt.rgba(255, 255, 255, 0.22)
+            antialiasing: true
+
+            // Specular Glass Rim
+            Rectangle {
+                anchors.fill: parent
+                anchors.margins: 1
+                radius: 25
+                color: "transparent"
+                border.width: 1 / FishUI.Dpi.ratio
+                border.color: Qt.rgba(255, 255, 255, 0.12)
+            }
         }
 
         ColumnLayout {
