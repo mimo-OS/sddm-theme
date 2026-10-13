@@ -47,8 +47,9 @@ Item {
         fillMode: Image.PreserveAspectCrop
         asynchronous: false
         clip: true
-        cache: false
+        cache: true
         smooth: true
+        visible: false
     }
 
     FastBlur {
