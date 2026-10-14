@@ -1,12 +1,12 @@
 [SddmGreeterTheme]
-Name=Cutefish
-Description=CutefishOS SDDM theme
+Name=mimo OS
+Description=mimo OS SDDM login theme
 Type=sddm-theme
-Author=CutefishOS contributors
+Author=mimo OS & CutefishOS contributors
 License=GPL
-Version=0.5
+Version=1.0
 MainScript=Main.qml
 ConfigFile=theme.conf
-Theme-Id=cutefish
+Theme-Id=mimo
 Theme-API=2.0
 QtVersion=6
